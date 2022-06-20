@@ -50,7 +50,7 @@ describe('Challenge 4 Tests', () => {
     expect(sumTwoSmallestNums([10, 343445353, 3453445, 3453545353453])).toBe(3453455)
     expect(sumTwoSmallestNums([2, 9, 6, -1])).toBe(8)
     expect(sumTwoSmallestNums([879, 953, 694, -847, 342, 221, -91, -723, 791, -587])).toBe(563)
-    expect(sumTwoSmallestNums([3683, 2902, 3951, -475, 1617, -2385])).toBe(4519)
+    expect(sumTwoSmallestNums([879, 953, 694, -847, 342, 221, -91, -723, 791, -587])).toBe(563)
     expect(sumTwoSmallestNums([-1, -1, 1, 1])).toBe(2)
     expect(sumTwoSmallestNums([1, 1, 1, 1])).toBe(2)
   })

@@ -1,20 +1,18 @@
 function sumMix(arr) {
-    var numberArray =[];
-    var length = arr.length;
-    for(var i = 0; i < length; i++) {
-        numberArray.push(parseInt(arr[i]));
+    var numberArray = []; //declare an array
+    length = arr.length; //get the length of the array being passed in the function
+    for (var i = 0; i < length; i++) { //loop each value of the array being passed
+        numberArray.push(parseInt(arr[i])); //change each value of the array being passed in the argument to an integer and populate it in the numberArray
+       
+
     }
- var sum = numberArray.reduce(
-    (previousValue, currentValue) => previousValue + currentValue,
-    0
-  );
-  return sum;
+    var sum = numberArray.reduce(function(a, b){ //return the sum of the array and store in a variable called sum
+        return a + b;
+    }, 0);
+    return sum;
+
+   
  }
- sumMix([9, 3, '7', '3']);
- sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]);
- sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']);
- sumMix([1, '5', 6, 7]);
- sumMix([10, 60, '80', 10]);
- sumMix(['1', 2, 3, '9', 10]);
- sumMix(['5', 6, '7']);
+
+
   module.exports = sumMix
