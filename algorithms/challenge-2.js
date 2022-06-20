@@ -1,5 +1,5 @@
 function filterArray(arr) {
-    const onlyNumbers = arr.filter(
+    var onlyNumbers = arr.filter(
         element => typeof element === 'number'
       );
       return onlyNumbers;
