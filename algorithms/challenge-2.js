@@ -1,7 +1,8 @@
 function filterArray(arr) {
-    const onlyNumbers = arr.filter(
+    arr.filter(
         element => typeof element === 'number'
       );
+      return arr;
 }
 filterArray([1, 2, "a", "b"]);
 module.exports = filterArray
